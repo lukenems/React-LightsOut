@@ -33,7 +33,7 @@ class Cell extends Component {
     } else {
       color = "#6600ff";
     };
-    let classes = "Cell" + (this.props.isLit ? " Cell-lit" : "");
+    let classes = "Cell"
 
     return (
         <td style={{backgroundColor: color}} className={classes} onClick={this.handleClick} />
