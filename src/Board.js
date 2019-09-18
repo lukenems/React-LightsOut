@@ -113,7 +113,7 @@ class Board extends Component {
     let board = this.state.board.map((row, y) => {
       let cell = row.map((cell, x) => {
         let key = `${y}-${x}`
-        return <Cell className="classCell" key={key} flipCellsAroundMe={(evt) => this.flipCellsAround(key)} />
+        return <Cell className="classCell" key={key} flipCellsAroundMe={(evt) => this.flipCellsAround(key)} value={this.state.board[y][x]}/>
       })
         return (
           <tr key={y}>
